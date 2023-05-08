@@ -1,8 +1,8 @@
 import './App.css'
 import Home from './components/Home'
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
-import MyProfile from './components/MyProfile'
-import MyProjects from './components/MyProjects'
+import MyProfile from './components/PortfolioEntry'
+import MyProjects from './components/Projects'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Portfolio from './components/Portfolio'
 function App() {

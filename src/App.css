@@ -1,42 +1,209 @@
-.home-img {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
+.cards{
+  width: fit-content;
+  margin: auto !important;
+  margin-top: 5% !important;
+  height: 250px !important;
+  padding: 2% 0% 0% 0% !important;
+  text-align: left;
+  border-radius: 10px !important;
+}
+.card-title{
+  color: #0c2461;
+  text-align: center;
+}
+.card-text{
+  color: #0c2461;
+}
+.center{
+  margin: auto;
+  font-weight: bolder;
+}
+.copyright{
+  display: flex;
+  justify-content: center;
+  color: rgb(78, 75, 75);
+}
+.contact-div{
+  display: flex;
+  justify-content: left;
+}
+.entry-layout{
+  margin: 5% 0% 8% 0%;
+  height:20vh;
+}
+.end{
+  margin-left: auto;
+  font-weight: bolder;
+}
+.footer{
+  height:20vh;
+  background: #f0932b;
+}
+.footer-headers{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right:10%;
+  align-items: center;
   
-  .home-img img {
-    width: 100%;
-    height: 100vh;
-  }
-  .my-profile{
-    height: 100vh;
-    background: linear-gradient(to right, #00d2d3,#4834d4);
-  }
+}
+.footer-icons{
+  display: block;
+  margin: 10px 0;
+  font-size: 25px;
+}
+.footer-adr-txt{
+  margin: 10px;
+}
+.footer-title{
+  text-align: left;
+  color: black;
+  font-weight: 600;
+}
+.header-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-img {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+.home-img img {
+  width: 100%;
+  height: 100vh;
+}
 .landing-container{
-    position: relative;
+  position: relative;
 }
 .landing-text{
-    position: absolute;
-    top: 40%;
-    margin-left:20%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    color: #fff;
-    font-size: 35px;
-    font-family: 'Lucida Grande';
-    }
+  position: absolute;
+  top: 40%;
+  margin-left:20%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+  font-size: 35px;
+  font-family: var( --e-global-typography-primary-font-family = 'Stick No Bills' ), Sans-serif;
+}
+.mid-line{
+  width: 3px;
+  position: absolute;
+  padding:0% 0% 0% 0% !important;
+  height: 100%;
+  background-color:white;
+  display: flex;
+  justify-content: center;
+}
+.my-profile{
+  height: 120vh;
+  background: white;
+}
+.navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1;
+}
 .profile-text{
-    padding-top: 10%;
-    color: #fff;
-    margin-left:10%;
-    font-size: 35px;
-    font-family: 'Lucida Grande';
+  padding-top: 10%;
+  color: #fff;
+  margin-left:10%;
+  font-size: 25px;
+  font-family: 'Stick No Bills', Sans-serif;
 }
 .portfolio{
-    height: 100vh;
-    background: linear-gradient(to right, #e74c3c,#e67e22)
+  height: fit-content;
+  background: #558bf0;
+  padding: 5px 0% 2% 0% !important;
+  position: relative;
 }
-.projects{
-    background: black;
-    height: 100vh;
+.portfolio-cards{
+margin-right: 2%;
+margin-left: 2%;
+}
+.project-body{
+  border-radius: 10px;
+  max-width: 600px !important;
+  background: #fff;
+  min-height: 180px;
+  margin: 0% 0% 0% 0%;
+  padding: 0% 0% 5% 0% !important;
+}
+.project-body-text{
+  margin: 10%;
+  color: #135988;
+}
+.project-row{
+  margin: 10% 0% 0% 0% !important;
+}
+.project-row-div{
+  height: fit-content;
+  position: relative;
+  margin-top: 5%;
+}
+.project-header{
+  font-weight: 600;
+  color: #fff;
+  margin-top: 15%;
+  padding:0% 0% 0% 10%;
+}
+.projects-main-div{
+  height: fit-content;
+  background-color:#135988;
+  position: relative;
+  display: flex;
+  padding: 0% 0% 2% 0%;
+  justify-content: center;
+}
+.start{
+margin-right: auto;
+font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+.cards{
+  max-width: 350px !important;
+  min-height: 220px !important;
+  padding: 0% 0% 0% 0%;
+  border-radius: 5px !important;
+  margin-top: 1% !important;
+  
+}
+.home-img{
+  height: 100vh;
+}
+.home-img img {
+  width: 100%;
+  height: 100% !important; 
+}
+.landing-text{
+  font-size: 18px;
+  margin: 0% 0% 10% 25% !important
+}
+.project-title{
+  font-size: 18px;
+}
+.profile-text{
+    font-size: 18px;
+}
+.portfolio-cards{
+  margin:0;
+}
+.project-row{
+  margin:0% 0% 0% 0% !important;
+  padding: 5% !important;
+}
+.project-header{
+  margin-top: 30%;
+}
+}
+@media(max-width: 600px){
+.cards{
+  min-width:100vw !important;
+  height: fit-content !important;
+}
 }

@@ -1,17 +1,35 @@
+import { useEffect, useState } from 'react'
+import Footer from './Footer'
 import LandingPage from './LandingPage'
-import MyProfile from './MyProfile'
-import MyProjects from './MyProjects'
+import PortfolioEntry from './PortfolioEntry'
+import MyProjects from './Projects'
 import Navigation from './Navigation'
 import Portfolio from './Portfolio'
+import ProjectsEntry from './ProjectsEntry'
 const Home = () => {
   return (
-    <div>
-      <Navigation/>
-      <LandingPage/>
-      <MyProfile/>
-      <Portfolio/>
-      <MyProjects/>
-    </div>
+    <>
+    <Navigation/>
+    <section id="home">
+      <LandingPage />
+    </section>
+    <section id="profile">
+      <PortfolioEntry />
+    </section>
+    <section id="portfolio">
+      <Portfolio />
+    </section>
+    <section id='projects'>
+      <ProjectsEntry/>
+      </section>
+      <section>
+        <MyProjects/>
+      </section>
+      <section>
+      <Footer/>
+      </section>
+   
+    </>
   )
 }
 export default Home

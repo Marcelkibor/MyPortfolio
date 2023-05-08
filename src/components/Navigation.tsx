@@ -1,16 +1,16 @@
 import { Navbar, Container, Nav } from 'react-bootstrap'
 import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import '../App.css'
-const Navigation = () => {
+const Navigation = ({isScrolled}: any) => {
   return (
-    <Navbar bg="light" variant="light">
+    <div className='navigation'>
+    <Navbar>
     <Container>
       <Navbar.Brand href="#home">Portfolio</Navbar.Brand>
-
       <Nav className="me-auto">
-        <Nav.Link href="#home">Home</Nav.Link>
-        <Nav.Link href="/profile">Profile</Nav.Link>
-        <Nav.Link href="/projects">Projects</Nav.Link>
+        <Nav.Link href="/">Home</Nav.Link>
+        <Nav.Link href="#profile">Profile</Nav.Link>
+        <Nav.Link href="#projects">Projects</Nav.Link>
       </Nav>
       {/* link icons */}
       <div className='social-icons'>
@@ -22,6 +22,9 @@ const Navigation = () => {
       </div>
     </Container>
   </Navbar>
+    
+    </div>
+    
   )
 }
 
