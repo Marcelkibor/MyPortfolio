@@ -1,0 +1,42 @@
+.home-img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .home-img img {
+    width: 100%;
+    height: 100vh;
+  }
+  .my-profile{
+    height: 100vh;
+    background: linear-gradient(to right, #00d2d3,#4834d4);
+  }
+.landing-container{
+    position: relative;
+}
+.landing-text{
+    position: absolute;
+    top: 40%;
+    margin-left:20%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #fff;
+    font-size: 35px;
+    font-family: 'Lucida Grande';
+    }
+.profile-text{
+    padding-top: 10%;
+    color: #fff;
+    margin-left:10%;
+    font-size: 35px;
+    font-family: 'Lucida Grande';
+}
+.portfolio{
+    height: 100vh;
+    background: linear-gradient(to right, #e74c3c,#e67e22)
+}
+.projects{
+    background: black;
+    height: 100vh;
+}
