@@ -87,7 +87,7 @@
   font-size: 35px;
   font-family: var( --e-global-typography-primary-font-family = 'Stick No Bills' ), Sans-serif;
 }
-.mid-line{
+.mid-line-active{
   width: 3px;
   position: absolute;
   padding:0% 0% 0% 0% !important;
@@ -96,17 +96,30 @@
   display: flex;
   justify-content: center;
 }
+.mid-line-inactive{
+  width: 3px;
+  position: absolute;
+  padding:0% 0% 0% 0% !important;
+  background-color:rgb(12, 162, 248);
+  display: flex;
+  justify-content: center;
+}
 .my-profile{
   height: 120vh;
   background: white;
 }
-.navigation {
+.navigation-inactive {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   background-color: transparent;
   z-index: 1;
+}
+.navigation-active{
+  position:fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  background: #fff;
 }
 .profile-text{
   padding-top: 10%;

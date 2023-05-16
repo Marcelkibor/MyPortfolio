@@ -25,7 +25,7 @@ const Home = () => {
       <section>
         <MyProjects/>
       </section>
-      <section>
+      <section id ='footer'>
       <Footer/>
       </section>
    

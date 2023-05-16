@@ -1,10 +1,43 @@
+import { useEffect, useState } from "react";
 import { Col, Row } from "react-bootstrap"
 
 const MyProjects = () => {
+  const [lineHeight,setLineHeight] = useState();
+  const [diff, setDiff] = useState<number>(0);
+  const [draw,setDraw] = useState<number>(0);
+  const[startHeight,setStartHeight] = useState<number>(0);
+  const [height, setHeight] = useState<number>(0);
+  useEffect(() => {
+    const handleScroll = () => {
+      const projectsEntry = document.getElementById('projects-entry');
+      if (projectsEntry) {
+        const  {top}  = projectsEntry.getBoundingClientRect();
+        setStartHeight(top + window.scrollY);
+        let diff = (window.scrollY - startHeight)
+          setDiff(diff)
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [startHeight]);
+  useEffect(()=>{
+    if(diff>10){
+      setDraw(diff+400)
+    }
+    else{
+      setDraw(0)
+    }
+  })
+  const elementStyle = {
+    height: `${draw}px`,
+  };
+return (
 
-  return (
-<div className="projects-main-div">
-  <div className="mid-line"></div>
+<div id = 'projects-entry'className="projects-main-div">
+  <div className='mid-line-active'></div>
+  <div className="mid-line-inactive" style={elementStyle}></div>
     <div className="project-row-div">
 <Row className="project-row" >
   <Col>
