@@ -1,6 +1,3 @@
-import { Container, Row, Col } from 'react-bootstrap'
-import { FaBrain, FaRProject } from 'react-icons/fa'
-
 const ProjectsEntry = () => {
 return (
     <>

@@ -1,6 +1,3 @@
-import { Container, Row, Col } from 'react-bootstrap'
-import { FaBrain } from 'react-icons/fa'
-
 const PortfolioEntry = () => {
 return (
     <>

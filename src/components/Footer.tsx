@@ -1,7 +1,6 @@
 import { Col, Row } from 'react-bootstrap';
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import { FaCopyright, FaEnvelope, FaFacebook, FaHome, FaInstagram, FaLinkedin, FaPhone, FaTrademark, FaTwitter } from 'react-icons/fa';
+import { FaCopyright, FaEnvelope, FaFacebook, FaHome, FaInstagram, FaLinkedin, FaPhone, FaTwitter } from 'react-icons/fa';
 const Footer = () => {
   return (
 <div style={{margin:'5% 0% 0% 10%'}}>

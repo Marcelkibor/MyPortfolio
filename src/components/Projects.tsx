@@ -2,11 +2,9 @@ import { useEffect, useState } from "react";
 import { Col, Row } from "react-bootstrap"
 
 const MyProjects = () => {
-  const [lineHeight,setLineHeight] = useState();
   const [diff, setDiff] = useState<number>(0);
   const [draw,setDraw] = useState<number>(0);
   const[startHeight,setStartHeight] = useState<number>(0);
-  const [height, setHeight] = useState<number>(0);
   useEffect(() => {
     const handleScroll = () => {
       const projectsEntry = document.getElementById('projects-entry');
